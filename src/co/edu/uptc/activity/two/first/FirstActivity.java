@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class FirstActivity {
-	private String path = "Workshop/files-activity-2/src/resources/input/texto.txt";
+	private String path = "src/resources/input/texto.txt";
 	private int counter;
 	private static final String[] VOWELS = { "a", "e", "i", "o", "u" };
 
