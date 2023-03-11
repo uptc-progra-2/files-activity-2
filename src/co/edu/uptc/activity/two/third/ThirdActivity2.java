@@ -41,8 +41,8 @@ public class ThirdActivity2 {
     }
 
     public static void main(String[] args) {
-        String base64 = readImage("Workshop/files-activity-2/src/resources/input/940.jpg");
+        String base64 = readImage("src/resources/input/940.jpg");
         System.out.println(base64);
-        writeFile(base64, "Workshop/files-activity-2/src/resources/output/940-base64.txt");
+        writeFile(base64, "src/resources/output/940-base64.txt");
     }
 }
