@@ -10,8 +10,7 @@ import java.util.Arrays;
 public class FirstActivity {
 	private String path = "Workshop/files-activity-2/src/resources/input/texto.txt";
 	private int counter;
-	private static final String[] VOWELS= {"a","e","i","o","u"};
-
+	private static final String[] VOWELS = { "a", "e", "i", "o", "u" };
 
 	/**
 	 * Metodo que cuenta la cantidad de vocales que hay en un archivo de tipo txt
@@ -42,7 +41,7 @@ public class FirstActivity {
 		return counter;
 	}
 
-		/**
+	/**
 	 * Metodo que verifica si un caracter es vocal o no
 	 * 
 	 * @param character
@@ -53,7 +52,8 @@ public class FirstActivity {
 	}
 
 	/**
-	 * Metodo que cuenta la cantidad de vocales que hay en un archivo de tipo txt pero con otra estructura
+	 * Metodo que cuenta la cantidad de vocales que hay en un archivo de tipo txt
+	 * pero con otra estructura
 	 * 
 	 * @return el numero total de vocales del texto
 	 */
@@ -79,6 +79,7 @@ public class FirstActivity {
 	public static void main(String[] args) {
 		FirstActivity firstActivity = new FirstActivity();
 		System.out.println("Total de vocales: " + firstActivity.getVowelsNumber());
-		System.out.println("Total de vocales: " + getVowelsNumber2("Workshop/files-activity-2/src/resources/input/texto.txt"));
+		System.out.println(
+				"Total de vocales: " + getVowelsNumber2("Workshop/files-activity-2/src/resources/input/texto.txt"));
 	}
 }

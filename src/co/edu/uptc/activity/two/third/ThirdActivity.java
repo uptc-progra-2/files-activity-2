@@ -16,7 +16,7 @@ public class ThirdActivity {
 	private static String readFile(String path) {
 		File file = new File(path);
 		StringBuilder builder = new StringBuilder();
-		try (Scanner scanner =  new Scanner(file)){
+		try (Scanner scanner = new Scanner(file)) {
 			scanner.useDelimiter("\n");
 			while (scanner.hasNextLine()) {
 				builder.append(scanner.next());
@@ -30,16 +30,17 @@ public class ThirdActivity {
 	/**
 	 * metodo para escribir una imagen en un archivo .jpg
 	 * 
-	 * @param path    ruta del archivo
+	 * @param path       ruta del archivo
 	 * @param imageBytes arreglo de bytes de la imagen
 	 */
-	private static void writeImage(String path, byte[] imageBytes){
+	private static void writeImage(String path, byte[] imageBytes) {
 		try (DataOutputStream stream = new DataOutputStream(new FileOutputStream(path))) {
 			stream.write(imageBytes);
 		} catch (Exception e) {
 			System.err.println(e.getStackTrace());
 		}
 	}
+
 	public static void main(String[] args) {
 		String base64 = readFile("Workshop/files-activity-2/src/resources/input/base64.txt");
 		System.out.println(base64);

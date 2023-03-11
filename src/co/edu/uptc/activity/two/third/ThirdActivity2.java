@@ -9,6 +9,7 @@ public class ThirdActivity2 {
 
     /**
      * Metodo para leer una imagen y convertirla en base64
+     * 
      * @param path
      * @return texto en base64
      */
@@ -27,8 +28,9 @@ public class ThirdActivity2 {
 
     /**
      * Metodo para escribir un archivo de texto.
+     * 
      * @param base64 texto en base64
-     * @param path ruta del archivo donde almacenaremos el texto
+     * @param path   ruta del archivo donde almacenaremos el texto
      */
     private static void writeFile(String base64, String path) {
         try (FileWriter writer = new FileWriter(path)) {

@@ -32,6 +32,7 @@ public class SecondActivity {
 
 	/**
 	 * metodo para leer un archivo .ddr y retornar un objeto persona
+	 * 
 	 * @param path
 	 * @return nuevo objeto persona
 	 */
@@ -70,6 +71,7 @@ public class SecondActivity {
 
 	/**
 	 * metodo para calcular la nueva edad de una persona
+	 * 
 	 * @param age
 	 * @return nueva edad
 	 */
@@ -87,7 +89,9 @@ public class SecondActivity {
 	}
 
 	/**
-	 * metodo para revertir el nombre de una persona, iniciando del ultimo apellido y finalizando en el primer nombre
+	 * metodo para revertir el nombre de una persona, iniciando del ultimo apellido
+	 * y finalizando en el primer nombre
+	 * 
 	 * @param fullName
 	 * @param useDecode
 	 * @return nombre completo revertido
@@ -103,6 +107,7 @@ public class SecondActivity {
 
 	/**
 	 * metodo para calcular el nuevo salario de una persona
+	 * 
 	 * @param salary
 	 * @return nuevo salario
 	 */
