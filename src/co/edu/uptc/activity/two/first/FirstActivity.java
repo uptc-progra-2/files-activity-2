@@ -7,41 +7,39 @@ public class FirstActivity {
 	//si pertenece a alguna vocal, si es igual a una vocal me retorna verdadero.
 	public boolean checkoutVocable(char letter) {
 		boolean isVocable = false;
-		String aei = (letter + "").toLowerCase();
+		String abc = (letter + "").toLowerCase();
 		String[] vowels = {"a","e","i","o","u"};
 		for (String str : vowels) {
-			if (str.equals(aei)) {
+			if (str.equals(abc)) {
 				isVocable=true;
 			}
 		}
 		return isVocable;
 	}
 
-	public void run() {
+	public void run(String path) {
 		int character;
 		int count = 0;
+		File file = new File(path);
+		try (FileReader reader = new FileReader(file)){
+			//FileReader file = new FileReader(new File("C:\\Users\\Samir\\Downloads\\files-activity-2-samir_molinares\\files-activity-2-samir_molinares\\src\\resources\\input\\texto.txt"));
 
-		try {
-			FileReader file = new FileReader(new File("C:\\Users\\USER\\Desktop\\monoo\\samir\\files-activity-2\\src\\resources\\input\\texto.txt"));
-
-			//
-			while((character = file.read())!= -1) {
+			while((character = reader.read())!= -1) {
 				if (this.checkoutVocable((char)character)) {
 					count++;
 				}
 			}
 
-			file.close();
+			reader.close();
 			System.out.println("El numero total de vocales es de: " + count);
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
 	public static void main(String[] args) {
-		new FirstActivity().run();
+		new FirstActivity().run("src/resources/input/texto.txt");
 
 	}
 
