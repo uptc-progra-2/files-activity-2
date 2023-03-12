@@ -6,8 +6,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-import co.edu.uptc.activity.two.first.Person;
-
 public class SecondActivity {
 	private static Person readPerson(String path) {
 		Person person= new Person(path, path, 0, 0, 0);
