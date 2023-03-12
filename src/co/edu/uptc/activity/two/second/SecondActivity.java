@@ -116,10 +116,10 @@ public class SecondActivity {
 	}
 
 	public static void main(String[] args) {
-		Person oldPerson = readPerson("src/resources/input/person.bin");
-		writeNewPerson("src/resources/output/new-person.ddr", oldPerson);
+		Person oldPerson = readPerson("files-activity-2/src/resources/input/person.bin");
+		writeNewPerson("files-activity-2/src/resources/output/new-person.ddr", oldPerson);
 		System.out.println(oldPerson);
-		Person newPerson = readNewPerson("src/resources/output/new-person.ddr");
+		Person newPerson = readNewPerson("files-activity-2/src/resources/output/new-person.ddr");
 		System.out.println(newPerson);
 	}
 }

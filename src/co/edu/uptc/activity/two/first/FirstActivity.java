@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class FirstActivity {
-	private String path = "src/resources/input/texto.txt";
+	private String path = "files-activity-2/src/resources/input/texto.txt";
 	private int counter;
 	private static final String[] VOWELS = { "a", "e", "i", "o", "u" };
 
@@ -80,6 +80,6 @@ public class FirstActivity {
 		FirstActivity firstActivity = new FirstActivity();
 		System.out.println("Total de vocales: " + firstActivity.getVowelsNumber());
 		System.out.println(
-				"Total de vocales: " + getVowelsNumber2("src/resources/input/texto.txt"));
+				"Total de vocales: " + getVowelsNumber2("files-activity-2/src/resources/input/texto.txt"));
 	}
 }
