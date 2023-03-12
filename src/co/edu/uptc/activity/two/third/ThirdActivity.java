@@ -42,10 +42,10 @@ public class ThirdActivity {
 	}
 
 	public static void main(String[] args) {
-		String base64 = readFile("src/resources/input/base64.txt");
+		String base64 = readFile("files-activity-2/src/resources/input/base64.txt");
 		System.out.println(base64);
 		byte[] imageBytes = java.util.Base64.getDecoder().decode(base64);
-		writeImage("src/resources/output/imagen.jpg", imageBytes);
+		writeImage("files-activity-2/src/resources/output/imagen.jpg", imageBytes);
 	}
 
 }
