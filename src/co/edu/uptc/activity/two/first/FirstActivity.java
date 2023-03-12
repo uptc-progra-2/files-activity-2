@@ -80,6 +80,6 @@ public class FirstActivity {
 		FirstActivity firstActivity = new FirstActivity();
 		System.out.println("Total de vocales: " + firstActivity.getVowelsNumber());
 		System.out.println(
-				"Total de vocales: " + getVowelsNumber2("src/resources/input/texto.txt"));
+				"Total de vocales: " + getVowelsNumber2("files-activity-2/src/resources/input/texto.txt"));
 	}
 }
